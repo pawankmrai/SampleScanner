@@ -31,42 +31,85 @@
 }
 - (IBAction)loadScanner:(id)sender {
     
-    // Make ourselves an overlay controller and tell the SDK about it.
-	OverlayController *overlayController = [[OverlayController alloc] initWithNibName:@"OverlayController" bundle:nil];
-	[pickerController setOverlay:overlayController];
-	[overlayController release];
-	
-	// hide the status bar and show the scanner view
-	[[UIApplication sharedApplication] setStatusBarHidden:YES];
-	[self presentModalViewController:pickerController animated:FALSE];
+     UIActionSheet *actionSheet=[[UIActionSheet alloc] initWithTitle:@"Select Type" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Camera",@"Photo Album", nil];
+    
+    [actionSheet showInView:self.view];
 }
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    NSString *title=[actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([title isEqualToString:@"Camera"]) {
+        
+        // Make ourselves an overlay controller and tell the SDK about it.
+        OverlayController *overlayController = [[OverlayController alloc] initWithNibName:@"OverlayController" bundle:nil];
+        [pickerController setOverlay:overlayController];
+        [overlayController release];
+        
+        // hide the status bar and show the scanner view
+        [[UIApplication sharedApplication] setStatusBarHidden:YES];
+        [self presentModalViewController:pickerController animated:FALSE];
+
+    }
+    else{
+    
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+        
+        imagePicker.delegate = self;
+        
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+        imagePicker.allowsEditing = YES;
+        
+        [self presentViewController:imagePicker animated:YES completion:nil];
+        
+    }
+}
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // Code here to work with media
+    UIImage *image=info[UIImagePickerControllerOriginalImage];
+    FindBarcodesInUIImage(image);
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(void)barcodePickerController:(BarcodePickerController *)picker returnResults:(NSSet *)results{
     
     [picker dismissModalViewControllerAnimated:YES];
     
-//    tempSet=[[NSSet alloc] initWithSet:results copyItems:YES];
-//    NSLog(@"tesmp---%@",tempSet);
-   
-//    NSString  *tempString=[tempSet valueForKey:@"barcodeString"] ;
-//    if ([tempString isKindOfClass:[NSString class]]) {
-//        
-//        NSLog(@"good string");
-//    }
-//    else
-//        NSLog(@"bad string");
-//    
-//        NSLog(@"array---%@",tempString);
+    NSLog(@"result---%@", results);
+       
+    NSSet  *tempSet=[results valueForKey:@"barcodeString"] ;
     
-   barCodeDetail=@"614141999996";
-   [self loadDetailForBarCode:barCodeDetail];
+    for (NSString *tempString in tempSet) {
+        
+        self.barCode=tempString;
+        
+    }
+//    NSLog(@"barcode string--%@",[results valueForKey:@"barcodeString"]);
+//    NSLog(@"extended barcode--%@",[results valueForKey:@"extendedBarcodeString"]);
+//    NSLog(@"barcode int value--%@",[results valueForKey:@"barcodeType"]);
+//    NSLog(@"associated barcode---%@",[results valueForKey:@"associatedBarcode"]);
+//     NSLog(@"first scan barcode---%@",[results valueForKey:@"firstScanTime"]);
+//     NSLog(@"most recent barcode---%@",[results valueForKey:@"mostRecentScanTime"]); 
+//
+//    self.barCode=[results valueForKey:@"barcodeString"];
+   // NSLog(@"bar code---%@",self.barCode);
+    
+   [self loadDetailForBarCode:self.barCode];
     
 }
--(void)loadDetailForBarCode:(NSString *)barcode{
+-(void)loadDetailForBarCode:(NSString *)finalBarcode{
     
-    //NSLog(@"barcode---%@",[[barcode description] retain]);
+    NSLog(@"barcode---%@",finalBarcode);
    // NSString *miloString=[NSString stringWithFormat:@"https://api.x.com/milo/v3/products?key=%@&postal_code=94301&show_defaults=false&show=614141999996",miloApiKey];
     
-    NSString *tempString=[NSString stringWithFormat:@"https://api.x.com/milo/v3/products?key=%@&q=EAN:9780596006488",miloApiKey];
+    NSString *tempString=[NSString stringWithFormat:@"https://api.x.com/milo/v3/products?key=%@&q=EAN:%@",miloApiKey,finalBarcode];
     NSURL *url=[NSURL URLWithString:tempString];
     
     dispatch_async(kBgQueue, ^{
@@ -85,33 +128,33 @@
                           
                           options:kNilOptions
                           error:&error];
-    NSLog(@"json---%@",json);
+   // NSLog(@"json---%@",json);
     
-//    NSArray* latestLoans = [json allValues]; //2
-//    
-//   // NSLog(@"loans: %@", latestLoans); //3
-//    [_detailTextView setText:[latestLoans description]];
-//    
-//    NSArray *tempArray=[latestLoans objectAtIndex:1];
-//    NSLog(@"tempDict---%@", tempArray);
-//     
-//    
-//    for (NSDictionary *tempDict in tempArray) {
-//        
-//        ScanDataClass *dataOBJ=[ScanDataClass new];
-//       
-//        NSString *name=[tempDict objectForKey:@"name"];
-//        dataOBJ.name=name;
-//        
-//        NSLog(@"oproduct name----%@", name);
-//        
-//        NSString *tempID=[tempDict objectForKey:@"product_id"];
-//        dataOBJ.productID=tempID;
-//     
-//        [dataArray addObject:dataOBJ];
-//    }
-//    
-//    [self designtable];
+    NSArray* latestLoans = [json allValues]; //2
+    
+   // NSLog(@"loans: %@", latestLoans); //3
+    [_detailTextView setText:[latestLoans description]];
+    
+    NSArray *tempArray=[latestLoans objectAtIndex:1];
+    //NSLog(@"tempDict---%@", tempArray);
+     
+    
+    for (NSDictionary *tempDict in tempArray) {
+        
+        ScanDataClass *dataOBJ=[ScanDataClass new];
+       
+        NSString *name=[tempDict objectForKey:@"name"];
+        dataOBJ.name=name;
+        
+        NSLog(@"oproduct name----%@", name);
+        
+        NSString *tempID=[tempDict objectForKey:@"product_id"];
+        dataOBJ.productID=tempID;
+     
+        [dataArray addObject:dataOBJ];
+    }
+    
+    [self designtable];
     
 }
 -(void)viewWillAppear:(BOOL)animated{
