@@ -57,15 +57,16 @@
 //    
 //        NSLog(@"array---%@",tempString);
     
-   barCodeDetail=@"upc614141999996";
+   barCodeDetail=@"614141999996";
    [self loadDetailForBarCode:barCodeDetail];
     
 }
 -(void)loadDetailForBarCode:(NSString *)barcode{
     
     //NSLog(@"barcode---%@",[[barcode description] retain]);
+   // NSString *miloString=[NSString stringWithFormat:@"https://api.x.com/milo/v3/products?key=%@&postal_code=94301&show_defaults=false&show=614141999996",miloApiKey];
     
-    NSString *tempString=[NSString stringWithFormat:@"https://api.x.com/milo/v3/products?key=%@&q=%@",miloApiKey,barcode];
+    NSString *tempString=[NSString stringWithFormat:@"https://api.x.com/milo/v3/products?key=%@&q=EAN:9780596006488",miloApiKey];
     NSURL *url=[NSURL URLWithString:tempString];
     
     dispatch_async(kBgQueue, ^{
@@ -84,32 +85,33 @@
                           
                           options:kNilOptions
                           error:&error];
+    NSLog(@"json---%@",json);
     
-    NSArray* latestLoans = [json allValues]; //2
-    
-   // NSLog(@"loans: %@", latestLoans); //3
-    [_detailTextView setText:[latestLoans description]];
-    
-    NSArray *tempArray=[latestLoans objectAtIndex:1];
-    NSLog(@"tempDict---%@", tempArray);
-     
-    
-    for (NSDictionary *tempDict in tempArray) {
-        
-        ScanDataClass *dataOBJ=[ScanDataClass new];
-       
-        NSString *name=[tempDict objectForKey:@"name"];
-        dataOBJ.name=name;
-        
-        NSLog(@"oproduct name----%@", name);
-        
-        NSString *tempID=[tempDict objectForKey:@"product_id"];
-        dataOBJ.productID=tempID;
-     
-        [dataArray addObject:dataOBJ];
-    }
-    
-    [self designtable];
+//    NSArray* latestLoans = [json allValues]; //2
+//    
+//   // NSLog(@"loans: %@", latestLoans); //3
+//    [_detailTextView setText:[latestLoans description]];
+//    
+//    NSArray *tempArray=[latestLoans objectAtIndex:1];
+//    NSLog(@"tempDict---%@", tempArray);
+//     
+//    
+//    for (NSDictionary *tempDict in tempArray) {
+//        
+//        ScanDataClass *dataOBJ=[ScanDataClass new];
+//       
+//        NSString *name=[tempDict objectForKey:@"name"];
+//        dataOBJ.name=name;
+//        
+//        NSLog(@"oproduct name----%@", name);
+//        
+//        NSString *tempID=[tempDict objectForKey:@"product_id"];
+//        dataOBJ.productID=tempID;
+//     
+//        [dataArray addObject:dataOBJ];
+//    }
+//    
+//    [self designtable];
     
 }
 -(void)viewWillAppear:(BOOL)animated{
