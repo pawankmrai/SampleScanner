@@ -18,6 +18,46 @@
 		0600430416575D06003B95AF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600430316575D06003B95AF /* Default-568h@2x.png */; };
 		0600430716575D06003B95AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0600430616575D06003B95AF /* ViewController.m */; };
 		0600430A16575D06003B95AF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0600430816575D06003B95AF /* ViewController.xib */; };
+		0600431316575D25003B95AF /* libRedLaserSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600431116575D25003B95AF /* libRedLaserSDK.a */; };
+		0600432B16575D40003B95AF /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0600431516575D40003B95AF /* beep.wav */; };
+		0600432C16575D40003B95AF /* bolt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431616575D40003B95AF /* bolt.png */; };
+		0600432D16575D40003B95AF /* green_down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431716575D40003B95AF /* green_down_arrow.png */; };
+		0600432E16575D40003B95AF /* green_up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431816575D40003B95AF /* green_up_arrow.png */; };
+		0600432F16575D40003B95AF /* powered_by_redlaser.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431916575D40003B95AF /* powered_by_redlaser.png */; };
+		0600433016575D40003B95AF /* powered_by_redlaser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431A16575D40003B95AF /* powered_by_redlaser@2x.png */; };
+		0600433116575D40003B95AF /* redlaser-stripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431B16575D40003B95AF /* redlaser-stripe.png */; };
+		0600433216575D40003B95AF /* redlaser-stripe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431C16575D40003B95AF /* redlaser-stripe@2x.png */; };
+		0600433316575D40003B95AF /* RedLaserOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431D16575D40003B95AF /* RedLaserOverlay.png */; };
+		0600433416575D40003B95AF /* RedLaserOverlay_DE_EAN.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431E16575D40003B95AF /* RedLaserOverlay_DE_EAN.png */; };
+		0600433516575D40003B95AF /* RedLaserOverlay_DE_EAN8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600431F16575D40003B95AF /* RedLaserOverlay_DE_EAN8.png */; };
+		0600433616575D40003B95AF /* RedLaserOverlay_DE_EAN8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432016575D40003B95AF /* RedLaserOverlay_DE_EAN8@2x.png */; };
+		0600433716575D40003B95AF /* RedLaserOverlay_DE_EAN@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432116575D40003B95AF /* RedLaserOverlay_DE_EAN@2x.png */; };
+		0600433816575D40003B95AF /* RedLaserOverlay_DE_UPCE.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432216575D40003B95AF /* RedLaserOverlay_DE_UPCE.png */; };
+		0600433916575D40003B95AF /* RedLaserOverlay_DE_UPCE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432316575D40003B95AF /* RedLaserOverlay_DE_UPCE@2x.png */; };
+		0600433A16575D40003B95AF /* RedLaserOverlay_EAN.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432416575D40003B95AF /* RedLaserOverlay_EAN.png */; };
+		0600433B16575D40003B95AF /* RedLaserOverlay_EAN8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432516575D40003B95AF /* RedLaserOverlay_EAN8.png */; };
+		0600433C16575D40003B95AF /* RedLaserOverlay_EAN8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432616575D40003B95AF /* RedLaserOverlay_EAN8@2x.png */; };
+		0600433D16575D40003B95AF /* RedLaserOverlay_UPCE.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432716575D40003B95AF /* RedLaserOverlay_UPCE.png */; };
+		0600433E16575D40003B95AF /* RedLaserOverlay_UPCE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432816575D40003B95AF /* RedLaserOverlay_UPCE@2x.png */; };
+		0600433F16575D40003B95AF /* white_down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432916575D40003B95AF /* white_down_arrow.png */; };
+		0600434016575D40003B95AF /* white_up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0600432A16575D40003B95AF /* white_up_arrow.png */; };
+		0600434316575D51003B95AF /* OverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0600434216575D51003B95AF /* OverlayController.m */; };
+		0600434516575D59003B95AF /* OverlayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0600434416575D59003B95AF /* OverlayController.xib */; };
+		0600434B16575D8E003B95AF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600434A16575D8E003B95AF /* Security.framework */; };
+		0600434D16575D97003B95AF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600434C16575D97003B95AF /* OpenGLES.framework */; };
+		0600434F16575DAB003B95AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600434E16575DAB003B95AF /* SystemConfiguration.framework */; };
+		0600435116575DB5003B95AF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600435016575DB5003B95AF /* CFNetwork.framework */; };
+		0600435316575DC1003B95AF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600435216575DC1003B95AF /* AudioToolbox.framework */; };
+		0600435516575DCA003B95AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600435416575DCA003B95AF /* AVFoundation.framework */; };
+		0600435716575DD5003B95AF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600435616575DD5003B95AF /* CoreMedia.framework */; };
+		0600435916575DDD003B95AF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600435816575DDD003B95AF /* CoreVideo.framework */; };
+		0600435B16575DF7003B95AF /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600435A16575DF6003B95AF /* libiconv.dylib */; };
+		0600435D16575E02003B95AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600435C16575E02003B95AF /* QuartzCore.framework */; };
+		0600435F16575E17003B95AF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0600435E16575E17003B95AF /* libstdc++.dylib */; };
+		0600436716576AE4003B95AF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0600436516576AE4003B95AF /* DetailViewController.m */; };
+		0600436816576AE4003B95AF /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0600436616576AE4003B95AF /* DetailViewController.xib */; };
+		0600437216579982003B95AF /* RedLaser_License.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0600437116579982003B95AF /* RedLaser_License.xml */; };
+		060043751657B0C5003B95AF /* ScanDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 060043741657B0C5003B95AF /* ScanDataClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +77,50 @@
 		0600430516575D06003B95AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0600430616575D06003B95AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0600430916575D06003B95AF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		0600431116575D25003B95AF /* libRedLaserSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRedLaserSDK.a; sourceTree = "<group>"; };
+		0600431216575D25003B95AF /* RedLaserSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedLaserSDK.h; sourceTree = "<group>"; };
+		0600431516575D40003B95AF /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		0600431616575D40003B95AF /* bolt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bolt.png; sourceTree = "<group>"; };
+		0600431716575D40003B95AF /* green_down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_down_arrow.png; sourceTree = "<group>"; };
+		0600431816575D40003B95AF /* green_up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_up_arrow.png; sourceTree = "<group>"; };
+		0600431916575D40003B95AF /* powered_by_redlaser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powered_by_redlaser.png; sourceTree = "<group>"; };
+		0600431A16575D40003B95AF /* powered_by_redlaser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powered_by_redlaser@2x.png"; sourceTree = "<group>"; };
+		0600431B16575D40003B95AF /* redlaser-stripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redlaser-stripe.png"; sourceTree = "<group>"; };
+		0600431C16575D40003B95AF /* redlaser-stripe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redlaser-stripe@2x.png"; sourceTree = "<group>"; };
+		0600431D16575D40003B95AF /* RedLaserOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLaserOverlay.png; sourceTree = "<group>"; };
+		0600431E16575D40003B95AF /* RedLaserOverlay_DE_EAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLaserOverlay_DE_EAN.png; sourceTree = "<group>"; };
+		0600431F16575D40003B95AF /* RedLaserOverlay_DE_EAN8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLaserOverlay_DE_EAN8.png; sourceTree = "<group>"; };
+		0600432016575D40003B95AF /* RedLaserOverlay_DE_EAN8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RedLaserOverlay_DE_EAN8@2x.png"; sourceTree = "<group>"; };
+		0600432116575D40003B95AF /* RedLaserOverlay_DE_EAN@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RedLaserOverlay_DE_EAN@2x.png"; sourceTree = "<group>"; };
+		0600432216575D40003B95AF /* RedLaserOverlay_DE_UPCE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLaserOverlay_DE_UPCE.png; sourceTree = "<group>"; };
+		0600432316575D40003B95AF /* RedLaserOverlay_DE_UPCE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RedLaserOverlay_DE_UPCE@2x.png"; sourceTree = "<group>"; };
+		0600432416575D40003B95AF /* RedLaserOverlay_EAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLaserOverlay_EAN.png; sourceTree = "<group>"; };
+		0600432516575D40003B95AF /* RedLaserOverlay_EAN8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLaserOverlay_EAN8.png; sourceTree = "<group>"; };
+		0600432616575D40003B95AF /* RedLaserOverlay_EAN8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RedLaserOverlay_EAN8@2x.png"; sourceTree = "<group>"; };
+		0600432716575D40003B95AF /* RedLaserOverlay_UPCE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLaserOverlay_UPCE.png; sourceTree = "<group>"; };
+		0600432816575D40003B95AF /* RedLaserOverlay_UPCE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RedLaserOverlay_UPCE@2x.png"; sourceTree = "<group>"; };
+		0600432916575D40003B95AF /* white_down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_down_arrow.png; sourceTree = "<group>"; };
+		0600432A16575D40003B95AF /* white_up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_up_arrow.png; sourceTree = "<group>"; };
+		0600434116575D51003B95AF /* OverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayController.h; sourceTree = "<group>"; };
+		0600434216575D51003B95AF /* OverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayController.m; sourceTree = "<group>"; };
+		0600434416575D59003B95AF /* OverlayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayController.xib; sourceTree = "<group>"; };
+		0600434A16575D8E003B95AF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0600434C16575D97003B95AF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0600434E16575DAB003B95AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0600435016575DB5003B95AF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0600435216575DC1003B95AF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0600435416575DCA003B95AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0600435616575DD5003B95AF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0600435816575DDD003B95AF /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0600435A16575DF6003B95AF /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		0600435C16575E02003B95AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0600435E16575E17003B95AF /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		0600436416576AE4003B95AF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0600436516576AE4003B95AF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0600436616576AE4003B95AF /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		0600437116579982003B95AF /* RedLaser_License.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = RedLaser_License.xml; path = "../RedLaser SDK Files/RedLaser_License.xml"; sourceTree = "<group>"; };
+		060043731657B0C5003B95AF /* ScanDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanDataClass.h; sourceTree = "<group>"; };
+		060043741657B0C5003B95AF /* ScanDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanDataClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +128,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0600435F16575E17003B95AF /* libstdc++.dylib in Frameworks */,
+				0600435D16575E02003B95AF /* QuartzCore.framework in Frameworks */,
+				0600435B16575DF7003B95AF /* libiconv.dylib in Frameworks */,
+				0600435916575DDD003B95AF /* CoreVideo.framework in Frameworks */,
+				0600435716575DD5003B95AF /* CoreMedia.framework in Frameworks */,
+				0600435516575DCA003B95AF /* AVFoundation.framework in Frameworks */,
+				0600435316575DC1003B95AF /* AudioToolbox.framework in Frameworks */,
+				0600435116575DB5003B95AF /* CFNetwork.framework in Frameworks */,
+				0600434F16575DAB003B95AF /* SystemConfiguration.framework in Frameworks */,
+				0600434D16575D97003B95AF /* OpenGLES.framework in Frameworks */,
+				0600434B16575D8E003B95AF /* Security.framework in Frameworks */,
 				060042EE16575D06003B95AF /* UIKit.framework in Frameworks */,
 				060042F016575D06003B95AF /* Foundation.framework in Frameworks */,
 				060042F216575D06003B95AF /* CoreGraphics.framework in Frameworks */,
+				0600431316575D25003B95AF /* libRedLaserSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +152,8 @@
 		060042DE16575D06003B95AF = {
 			isa = PBXGroup;
 			children = (
+				0600431416575D40003B95AF /* Overlay Assets */,
+				0600431016575D25003B95AF /* RedLaser SDK Files */,
 				060042F316575D06003B95AF /* SampleScan */,
 				060042EC16575D06003B95AF /* Frameworks */,
 				060042EA16575D06003B95AF /* Products */,
@@ -73,6 +171,17 @@
 		060042EC16575D06003B95AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0600435E16575E17003B95AF /* libstdc++.dylib */,
+				0600435C16575E02003B95AF /* QuartzCore.framework */,
+				0600435A16575DF6003B95AF /* libiconv.dylib */,
+				0600435816575DDD003B95AF /* CoreVideo.framework */,
+				0600435616575DD5003B95AF /* CoreMedia.framework */,
+				0600435416575DCA003B95AF /* AVFoundation.framework */,
+				0600435216575DC1003B95AF /* AudioToolbox.framework */,
+				0600435016575DB5003B95AF /* CFNetwork.framework */,
+				0600434E16575DAB003B95AF /* SystemConfiguration.framework */,
+				0600434C16575D97003B95AF /* OpenGLES.framework */,
+				0600434A16575D8E003B95AF /* Security.framework */,
 				060042ED16575D06003B95AF /* UIKit.framework */,
 				060042EF16575D06003B95AF /* Foundation.framework */,
 				060042F116575D06003B95AF /* CoreGraphics.framework */,
@@ -89,6 +198,11 @@
 				0600430616575D06003B95AF /* ViewController.m */,
 				0600430816575D06003B95AF /* ViewController.xib */,
 				060042F416575D06003B95AF /* Supporting Files */,
+				0600436416576AE4003B95AF /* DetailViewController.h */,
+				0600436516576AE4003B95AF /* DetailViewController.m */,
+				0600436616576AE4003B95AF /* DetailViewController.xib */,
+				060043731657B0C5003B95AF /* ScanDataClass.h */,
+				060043741657B0C5003B95AF /* ScanDataClass.m */,
 			);
 			path = SampleScan;
 			sourceTree = "<group>";
@@ -96,6 +210,7 @@
 		060042F416575D06003B95AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0600437116579982003B95AF /* RedLaser_License.xml */,
 				060042F516575D06003B95AF /* SampleScan-Info.plist */,
 				060042F616575D06003B95AF /* InfoPlist.strings */,
 				060042F916575D06003B95AF /* main.m */,
@@ -105,6 +220,47 @@
 				0600430316575D06003B95AF /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0600431016575D25003B95AF /* RedLaser SDK Files */ = {
+			isa = PBXGroup;
+			children = (
+				0600434116575D51003B95AF /* OverlayController.h */,
+				0600434216575D51003B95AF /* OverlayController.m */,
+				0600434416575D59003B95AF /* OverlayController.xib */,
+				0600431116575D25003B95AF /* libRedLaserSDK.a */,
+				0600431216575D25003B95AF /* RedLaserSDK.h */,
+			);
+			path = "RedLaser SDK Files";
+			sourceTree = "<group>";
+		};
+		0600431416575D40003B95AF /* Overlay Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0600431516575D40003B95AF /* beep.wav */,
+				0600431616575D40003B95AF /* bolt.png */,
+				0600431716575D40003B95AF /* green_down_arrow.png */,
+				0600431816575D40003B95AF /* green_up_arrow.png */,
+				0600431916575D40003B95AF /* powered_by_redlaser.png */,
+				0600431A16575D40003B95AF /* powered_by_redlaser@2x.png */,
+				0600431B16575D40003B95AF /* redlaser-stripe.png */,
+				0600431C16575D40003B95AF /* redlaser-stripe@2x.png */,
+				0600431D16575D40003B95AF /* RedLaserOverlay.png */,
+				0600431E16575D40003B95AF /* RedLaserOverlay_DE_EAN.png */,
+				0600431F16575D40003B95AF /* RedLaserOverlay_DE_EAN8.png */,
+				0600432016575D40003B95AF /* RedLaserOverlay_DE_EAN8@2x.png */,
+				0600432116575D40003B95AF /* RedLaserOverlay_DE_EAN@2x.png */,
+				0600432216575D40003B95AF /* RedLaserOverlay_DE_UPCE.png */,
+				0600432316575D40003B95AF /* RedLaserOverlay_DE_UPCE@2x.png */,
+				0600432416575D40003B95AF /* RedLaserOverlay_EAN.png */,
+				0600432516575D40003B95AF /* RedLaserOverlay_EAN8.png */,
+				0600432616575D40003B95AF /* RedLaserOverlay_EAN8@2x.png */,
+				0600432716575D40003B95AF /* RedLaserOverlay_UPCE.png */,
+				0600432816575D40003B95AF /* RedLaserOverlay_UPCE@2x.png */,
+				0600432916575D40003B95AF /* white_down_arrow.png */,
+				0600432A16575D40003B95AF /* white_up_arrow.png */,
+			);
+			path = "Overlay Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +319,31 @@
 				0600430216575D06003B95AF /* Default@2x.png in Resources */,
 				0600430416575D06003B95AF /* Default-568h@2x.png in Resources */,
 				0600430A16575D06003B95AF /* ViewController.xib in Resources */,
+				0600432B16575D40003B95AF /* beep.wav in Resources */,
+				0600432C16575D40003B95AF /* bolt.png in Resources */,
+				0600432D16575D40003B95AF /* green_down_arrow.png in Resources */,
+				0600432E16575D40003B95AF /* green_up_arrow.png in Resources */,
+				0600432F16575D40003B95AF /* powered_by_redlaser.png in Resources */,
+				0600433016575D40003B95AF /* powered_by_redlaser@2x.png in Resources */,
+				0600433116575D40003B95AF /* redlaser-stripe.png in Resources */,
+				0600433216575D40003B95AF /* redlaser-stripe@2x.png in Resources */,
+				0600433316575D40003B95AF /* RedLaserOverlay.png in Resources */,
+				0600433416575D40003B95AF /* RedLaserOverlay_DE_EAN.png in Resources */,
+				0600433516575D40003B95AF /* RedLaserOverlay_DE_EAN8.png in Resources */,
+				0600433616575D40003B95AF /* RedLaserOverlay_DE_EAN8@2x.png in Resources */,
+				0600433716575D40003B95AF /* RedLaserOverlay_DE_EAN@2x.png in Resources */,
+				0600433816575D40003B95AF /* RedLaserOverlay_DE_UPCE.png in Resources */,
+				0600433916575D40003B95AF /* RedLaserOverlay_DE_UPCE@2x.png in Resources */,
+				0600433A16575D40003B95AF /* RedLaserOverlay_EAN.png in Resources */,
+				0600433B16575D40003B95AF /* RedLaserOverlay_EAN8.png in Resources */,
+				0600433C16575D40003B95AF /* RedLaserOverlay_EAN8@2x.png in Resources */,
+				0600433D16575D40003B95AF /* RedLaserOverlay_UPCE.png in Resources */,
+				0600433E16575D40003B95AF /* RedLaserOverlay_UPCE@2x.png in Resources */,
+				0600433F16575D40003B95AF /* white_down_arrow.png in Resources */,
+				0600434016575D40003B95AF /* white_up_arrow.png in Resources */,
+				0600434516575D59003B95AF /* OverlayController.xib in Resources */,
+				0600436816576AE4003B95AF /* DetailViewController.xib in Resources */,
+				0600437216579982003B95AF /* RedLaser_License.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +357,9 @@
 				060042FA16575D06003B95AF /* main.m in Sources */,
 				060042FE16575D06003B95AF /* AppDelegate.m in Sources */,
 				0600430716575D06003B95AF /* ViewController.m in Sources */,
+				0600434316575D51003B95AF /* OverlayController.m in Sources */,
+				0600436716576AE4003B95AF /* DetailViewController.m in Sources */,
+				060043751657B0C5003B95AF /* ScanDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +393,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Grote (QW2LRUS3PF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Grote (QW2LRUS3PF)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -223,6 +408,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "3982371C-4DC6-46B2-A8A2-CB5975C44ABE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3982371C-4DC6-46B2-A8A2-CB5975C44ABE";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -235,7 +422,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Grote (QW2LRUS3PF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Grote (QW2LRUS3PF)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -243,6 +431,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "3982371C-4DC6-46B2-A8A2-CB5975C44ABE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3982371C-4DC6-46B2-A8A2-CB5975C44ABE";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -254,6 +444,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleScan/SampleScan-Prefix.pch";
 				INFOPLIST_FILE = "SampleScan/SampleScan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RedLaser SDK Files\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -265,6 +460,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleScan/SampleScan-Prefix.pch";
 				INFOPLIST_FILE = "SampleScan/SampleScan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RedLaser SDK Files\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
